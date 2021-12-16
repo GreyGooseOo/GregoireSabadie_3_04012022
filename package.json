@@ -1,0 +1,19 @@
+{
+  "name": "projet-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreyGooseOo/mission_part3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreyGooseOo/mission_part3/issues"
+  },
+  "homepage": "https://github.com/GreyGooseOo/mission_part3#readme"
+}
