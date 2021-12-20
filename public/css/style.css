@@ -1,3 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+header {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 2px #c3c3c3;
+  padding: 5px;
+}
+header .header__container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header img {
+  width: 50%;
+}
+
+.container {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.container__heading {
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #e9e9e9;
+  padding: 15px;
+}
+.container__heading__text i {
+  margin-right: 15px;
+}
+.container__block {
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 20px 60px 20px;
+}
+.container__block h2 {
+  font-size: 1.4em;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+.container__block p {
+  font-size: 1em;
+}
+.container__block__btn {
+  font-size: 1em;
+  width: auto;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 4px 4px 10px #c3c3c3;
+}
+.container__block__btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.fonctionnement__container {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 60px 20px 60px 20px;
+}
+.fonctionnement__container h2 {
+  font-size: 1.4em;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+.fonctionnement__container ol {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.fonctionnement__container li {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  width: auto;
+  counter-increment: li;
+  box-shadow: 4px 4px 10px #c3c3c3;
+}
+.fonctionnement__container li::before {
+  content: counter(li);
+  color: white;
+  display: inline-block;
+  background-color: #9356DC;
+  width: 18px;
+  margin-left: -40px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: normal;
+}
+.fonctionnement__container li i {
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #777777;
+}
+.fonctionnement__container li:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement__container li:hover > i {
+  color: #9356DC;
+}
+
+.restaurants__container {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 60px 20px 60px 20px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants__container h2 {
+  font-size: 1.4em;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.restaurants__container__block {
+  background-color: white;
+  border-radius: 25px;
+  font-size: 1em;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: 4px 4px 10px #c3c3c3;
+}
+.restaurants__container__block__new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #278870;
+  padding: 5px 10px 5px 10px;
+  background-color: #99E2D0;
+  font-weight: bold;
+}
+.restaurants__container__block__like {
+  position: absolute;
+  bottom: 35px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.restaurants__container__block__nom {
+  font-weight: bolder;
+  padding: 15px 0 5px 15px;
+  font-size: 1.1em;
+}
+.restaurants__container__block__lieu {
+  padding: 0 0 15px 15px;
+}
+.restaurants__container__block a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants__container__block a:hover {
+  color: #9356DC;
+}
+.restaurants__container__block img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #2a2a2a;
+  padding: 30px;
+  font-family: "Roboto";
+  width: 100%;
+}
+footer .footer_logo {
+  filter: invert(100%);
+  margin-bottom: 15px;
+}
+footer .footer_logo img {
+  width: 110px;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  padding: 5px;
+  color: white;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover {
+  color: #9356DC;
+}
+footer li i {
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

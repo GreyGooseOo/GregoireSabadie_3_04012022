@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./public/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/7a01631bdb.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="loader"></div>
@@ -17,57 +18,58 @@
   <section>
     <article>
       <div class="container">
-        <div class="heading">
-          <div class="heading__text"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</div>
+        <div class="container__heading">
+          <div class="container__heading__text"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</div>
         </div>
-        <div class="block">
-          <h1>Réservez le menu qui vous convient</h1>
+        <div class="container__block">
+          <h2>Réservez le menu qui vous convient</h2>
           <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-          <div class="block__btn">Explorer nos restaurants</div>
+          <div class="container__block__btn"><a href="#restaurants">Explorer nos restaurants</a></div>
         </div>
       </div>
     </article>
     <article id="fonctionnement">
-      <div class="container">
+      <div class="fonctionnement__container">
         <h2>Fonctionnement</h2>
         <ol>
-          <li><i class="fas fa-mobile-alt">Choisissez un restaurant</i></li>
+          <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
           <li><i class="fas fa-list"></i>Composez votre menu</li>
           <li><i class="fas fa-store"></i>Degustez au restaurant</li>
         </ol>
       </div>
     </article>
     <article id="restaurants">
-      <div class="container">
-        <div class="block__restaurant">
+      <div class="restaurants__container">
+        <h2>Restaurants</h2>
+        <div class="restaurants__container__block">
           <a href="Menus/menu_1.html"><img src="public/img/restaurants/la_palette_du_gout.jpg" alt="la palette du gout">
-            <div class="block__restaurant__nom">la palette du goût</div>
-            <div>Ménilmontant</div>
+            <div class="restaurants__container__block__new">Nouveau</div>
+            <div class="restaurants__container__block__nom">La palette du goût</div>
+            <div class="restaurants__container__block__lieu">Ménilmontant</div>
           </a>
-          <div>Nouveau</div>
-          <div class="block__restaurant__like"><i class="far fa-heart"></i></div>
+          <div class="restaurants__container__block__like"><i class="far fa-heart"></i></div>
         </div>
-        <div class="block__restaurant">
+        <div class="restaurants__container__block">
           <a href="Menus/menu_2.html"><img src="public/img/restaurants/la_note_enchantee.jpg" alt="la note enchantée">
-            <div class="block__restaurant__nom">la note enchantée</div>
-            <div>Charonne</div>
+            <div class="restaurants__container__block__new">Nouveau</div>
+            <div class="restaurants__container__block__nom">La note enchantée</div>
+            <div class="restaurants__container__block__lieu">Charonne</div>
           </a>
-          <div>Nouveau</div>
-          <div class="block__restaurant__like"><i class="far fa-heart"></i></div>
+          <div class="restaurants__container__block__like"><i class="far fa-heart"></i></div>
         </div>
-        <div class="block__restaurant">
+        <div class="restaurants__container__block">
           <a href="Menus/menu_3.html"><img src="public/img/restaurants/a_la_francaise.jpg" alt="À la française">
-            <div class="block__restaurant__nom">À la française</div>
-            <div>Cité rouge</div>
+            <div class="restaurants__container__block__nom">À la française</div>
+            <div class="restaurants__container__block__lieu">Cité rouge</div>
           </a>
-          <div class="block__restaurant__like"><i class="far fa-heart"></i></div>
+          <div class="restaurants__container__block__like"><i class="far fa-heart"></i></div>
         </div>
-        <div class="block__restaurant">
-          <a href="Menus/menu_4.html"><img src="public/img/restaurants/le_delice_des_sens.jpg" alt="Le délices des sens">
-            <div class="block__restaurant__nom">Le délices des sens</div>
-            <div>Folie-Méricourt</div>
+        <div class="restaurants__container__block">
+          <a href="Menus/menu_4.html"><img src="public/img/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
+            <div class="restaurants__container__block__nom">Le délice des sens</div>
+            <div class="restaurants__container__block__lieu">Folie-Méricourt</div>
           </a>
-          <div class="block__restaurant__like"><i class="far fa-heart"></i></div>
+          <div class="restaurants__container__block__like"><i class="far fa-heart"></i></div>
         </div>
       </div>
     </article>
@@ -75,7 +77,7 @@
   <footer>
     <div class="footer_logo"><img src="public/img/logo/ohmyfood.png" alt="Logo ohmyfood"></div>
     <ul>
-      <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+      <li><i class="fas fa-utensils" style="position: relative; left: 5px;"></i><a href="#" style="position: relative; left: 7px;">Proposer un restaurant</a></li>
       <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
       <li><a href="#">Mentions légales</a></li>
       <li><a href="#">Contact</a></li>
