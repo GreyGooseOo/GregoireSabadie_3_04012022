@@ -1,0 +1,65 @@
+.img__restaurant img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+h1{
+    width: 100%;
+    font-family: $font-prim;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    span{
+        padding: 20px;
+    }
+    i{
+        padding: 20px;
+    }
+}
+.plats{
+    font-family: $font-sec;
+    width: 100%;
+    h3{
+        @include menu-subtitle-style;
+    
+    }
+    &__choix{
+        background-color: white;
+        border-radius: 20px;
+        width: 85%;
+        margin: 10px;
+        padding: 15px;
+        box-shadow: 4px 4px 10px darken($clr-bkg,20%);
+        position: relative;
+        &__nom{
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        &__prix{
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            font-weight: bold;
+            z-index: 1;
+        }
+    }
+}
+.menu{
+    width: 100%;
+    background-color: $clr-bkg;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn_commander{
+        font-family: $font-sec,Arial, Helvetica, sans-serif;
+        margin: 30px;
+        padding: 20px 50px 20px 50px;   
+        @include btn-prim;
+    }
+}

@@ -18,9 +18,55 @@ header .header__container {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+}
+header .header__container i {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+}
+header .header__container a {
+  font-size: 1.5em;
+}
+header .header__container a:visited {
+  color: black;
 }
 header img {
   width: 50%;
+}
+
+footer {
+  background-color: #2a2a2a;
+  padding: 30px;
+  font-family: "Roboto";
+  width: 100%;
+  margin-top: 0px;
+}
+footer .footer_logo {
+  filter: invert(100%);
+  margin-bottom: 15px;
+}
+footer .footer_logo img {
+  width: 110px;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  padding: 5px;
+  color: white;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover {
+  color: #9356DC;
+}
+footer li i {
+  margin-right: 10px;
 }
 
 .container {
@@ -62,11 +108,11 @@ header img {
 }
 .container__block__btn {
   font-size: 1em;
-  width: auto;
+  width: fit-content;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border-radius: 40px;
-  padding: 20px;
   box-shadow: 4px 4px 10px #c3c3c3;
+  padding: 20px;
 }
 .container__block__btn a {
   text-decoration: none;
@@ -188,37 +234,85 @@ header img {
   object-fit: cover;
 }
 
-footer {
-  background-color: #2a2a2a;
-  padding: 30px;
+.img__restaurant img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+h1 {
+  width: 100%;
+  font-family: "Shrikhand";
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 span {
+  padding: 20px;
+}
+h1 i {
+  padding: 20px;
+}
+
+.plats {
   font-family: "Roboto";
   width: 100%;
 }
-footer .footer_logo {
-  filter: invert(100%);
-  margin-bottom: 15px;
+.plats h3 {
+  font-size: 1.2em;
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+  margin: 20px;
 }
-footer .footer_logo img {
-  width: 110px;
+.plats__choix {
+  background-color: white;
+  border-radius: 20px;
+  width: 85%;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 10px #c3c3c3;
+  position: relative;
 }
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.plats__choix__nom {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
-footer li {
-  padding: 5px;
-  color: white;
+.plats__choix__prix {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  font-weight: bold;
+  z-index: 1;
 }
-footer li a {
+
+.menu {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: -50px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .btn_commander {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 30px;
+  padding: 20px 50px 20px 50px;
+  font-size: 1em;
+  width: fit-content;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border-radius: 40px;
+  box-shadow: 4px 4px 10px #c3c3c3;
+}
+.menu .btn_commander a {
   text-decoration: none;
   color: white;
-}
-footer li a:hover {
-  color: #9356DC;
-}
-footer li i {
-  margin-right: 10px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

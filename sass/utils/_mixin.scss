@@ -5,3 +5,23 @@
     font-weight: bold;
     
 }
+@mixin menu-subtitle-style {
+    font-size: 1.2em;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+    margin: 20px;
+}
+@mixin btn-prim {
+    font-size: 1em;
+    width: fit-content;
+    background: linear-gradient(175deg, $clr-sec, $clr-prim);
+    border-radius: 40px;
+    box-shadow: 4px 4px 10px darken($clr-bkg,20%);
+    & a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    
+}

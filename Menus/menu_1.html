@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="../public/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/7a01631bdb.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="loader"></div>
@@ -16,72 +17,72 @@
     </div>
   </header>
   <div class="img__restaurant"><img src="../public/img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût"></div>
-  <section>
-      <h1>La palette du goût <i class="far fa-heart"></i></h1>
-      <article class="entrees">
-          <h2>ENTRÉES</h2>
-          <div class="choix">
-              <div class="choix__nom">Fricassée d'escargot</div>
-              <div class="choix__info">Au piment d'Espelette </div>
-              <div class="choix__prix">25€</div>
-              <div class="choix__validation"></div>
+  <section class="menu">
+      <h1><span>La palette du goût</span><i class="far fa-heart"></i></h1>
+      <article class="plats">
+          <h3>ENTRÉES</h3>
+          <div class="plats__choix">
+              <div class="plats__choix__nom">Fricassée d'escargot</div>
+              <div class="plats__choix__info">Au piment d'Espelette </div>
+              <div class="plats__choix__prix">25€</div>
+              <div class="plats__choix__validation"></div>
           </div>
-          <div class="choix">
-            <div class="choix__nom">Foie gras de canard mi-cuit</div>
-            <div class="choix__info">Et ses copeaux de truffe noire </div>
-            <div class="choix__prix">35€</div>
-            <div class="choix__validation"></div>
+          <div class="plats__choix">
+            <div class="plats__choix__nom">Foie gras de canard mi-cuit</div>
+            <div class="plats__choix__info">Et ses copeaux de truffe noire </div>
+            <div class="plats__choix__prix">35€</div>
+            <div class="plats__choix__validation"></div>
         </div>
-        <div class="choix">
-            <div class="choix__nom">Oeuf au plat</div>
-            <div class="choix__info">Assaisonné à la truffe sur lit de caviar</div>
-            <div class="choix__prix">20€</div>
-            <div class="choix__validation"></div>
+        <div class="plats__choix">
+            <div class="plats__choix__nom">Oeuf au plat</div>
+            <div class="plats__choix__info">Assaisonné à la truffe sur lit de caviar</div>
+            <div class="plats__choix__prix">20€</div>
+            <div class="plats__choix__validation"></div>
         </div>
       </article>
       <article class="plats">
-        <h2>PLATS</h2>
-        <div class="choix">
-            <div class="choix__nom">Filet de boeuf aux herbes</div>
-            <div class="choix__info">Accompagné de sa ribambelle de légumes</div>
-            <div class="choix__prix">40€</div>
-            <div class="choix__validation"></div>
+        <h3>PLATS</h3>
+        <div class="plats__choix">
+            <div class="plats__choix__nom">Filet de boeuf aux herbes</div>
+            <div class="plats__choix__info">Accompagné de sa ribambelle de légumes</div>
+            <div class="plats__choix__prix">40€</div>
+            <div class="plats__choix__validation"></div>
         </div>
-        <div class="choix">
-          <div class="choix__nom">Parmentier de queue de boeuf</div>
-          <div class="choix__info">À la truffe noire sur sa purée de panais</div>
-          <div class="choix__prix">35€</div>
-          <div class="choix__validation"></div>
+        <div class="plats__choix">
+          <div class="plats__choix__nom">Parmentier de queue de boeuf</div>
+          <div class="plats__choix__info">À la truffe noire sur sa purée de panais</div>
+          <div class="plats__choix__prix">35€</div>
+          <div class="plats__choix__validation"></div>
       </div>
-      <div class="choix">
-          <div class="choix__nom">Filet de turbot</div>
-          <div class="choix__info">Aux agrumes</div>
-          <div class="hoix__prix">44€</div>
-          <div class="choix__validation"></div>
+      <div class="plats__choix">
+          <div class="plats__choix__nom">Filet de turbot</div>
+          <div class="plats__choix__info">Aux agrumes</div>
+          <div class="plats__choix__prix">44€</div>
+          <div class="plats__choix__validation"></div>
       </div>
     </article>
-    <article class="desserts">
-        <h2>DESSERT</h2>
-        <div class="choix">
-            <div class="choix__nom">Paris-Brest</div>
-            <div class="choix__info">Revisité</div>
-            <div class="choix__prix">18€</div>
-            <div class="choix__validation"></div>
+    <article class="plats">
+        <h3>DESSERT</h3>
+        <div class="plats__choix">
+            <div class="plats__choix__nom">Paris-Brest</div>
+            <div class="plats__choix__info">Revisité</div>
+            <div class="plats__choix__prix">18€</div>
+            <div class="plats__choix__validation"></div>
         </div>
-        <div class="choix">
-          <div class="choix__nom">Macaron au chocolat d'exception</div>
-          <div class="choix__info">Et glace à la vanille de Madagascar</div>
-          <div class="choix__prix">22€</div>
-          <div class="choix__validation"></div>
+        <div class="plats__choix">
+          <div class="plats__choix__nom">Macaron au chocolat d'exception</div>
+          <div class="plats__choix__info">Et glace à la vanille de Madagascar</div>
+          <div class="plats__choix__prix">22€</div>
+          <div class="plats__choix__validation"></div>
       </div>
-      <div class="choix">
-          <div class="choix__nom">Mousse au chocolat </div>
-          <div class="choix__info">Au piment d'Espelette et à la truffe noire</div>
-          <div class="choix__prix">23€</div>
-          <div class="choix__validation"></div>
+      <div class="plats__choix">
+          <div class="plats__choix__nom">Mousse au chocolat </div>
+          <div class="plats__choix__info">Au piment d'Espelette et à la truffe noire</div>
+          <div class="plats__choix__prix">23€</div>
+          <div class="plats__choix__validation"></div>
       </div>
     </article>
-    <div class="btn_commander">Commander</div>
+    <div class="btn_commander"><a href="#">Commander</a></div>
   </section>
   <footer>
     <div class="footer_logo"><img src="../public/img/logo/ohmyfood.png" alt="Logo ohmyfood"></div>
