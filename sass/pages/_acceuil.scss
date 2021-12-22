@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
     font-family: $font-sec,Arial, Helvetica, sans-serif;
-    width: 100%;
+    width: 100vw;
     &__heading{
         width: 100%;
         font-size: 1em;
@@ -41,6 +41,7 @@
 .fonctionnement__container{
     font-family: $font-sec,Arial, Helvetica, sans-serif;
     padding: 60px 20px 60px 20px;
+    background-color: white;
     h2{
         @include subtitle-style
     }

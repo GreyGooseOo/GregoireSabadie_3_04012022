@@ -1,10 +1,10 @@
 .img__restaurant img{
-    width: 100%;
+    width: 100vw;
     height: 300px;
     object-fit: cover;
 }
 h1{
-    width: 100%;
+    width: 100vw;
     font-family: $font-prim;
     font-size: 2em;
     display: flex;
@@ -14,20 +14,28 @@ h1{
         padding: 20px;
     }
     i{
-        padding: 20px;
+        padding: 20px 50px 20px 20px;
     }
 }
 .plats{
     font-family: $font-sec;
-    width: 100%;
+    width: 100vw;
     h3{
         @include menu-subtitle-style;
-    
     }
+    .bordure{
+        position: relative;
+        left: 20px;
+        bottom: 15px;
+        width: 50px;
+        height: 3px;
+        background-color: $clr-ter;
+    }
+    
     &__choix{
         background-color: white;
         border-radius: 20px;
-        width: 85%;
+        width: auto;
         margin: 10px;
         padding: 15px;
         box-shadow: 4px 4px 10px darken($clr-bkg,20%);
