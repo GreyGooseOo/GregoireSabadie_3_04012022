@@ -1,0 +1,36 @@
+@keyframes affichage-menu{
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    85%,100%{
+        transform: translateY(0px);   
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes plat-validation-bkg{
+    0%{
+        transform: translateX(70px)
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes plat-validation-prix{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-70px);
+    }
+}
+@keyframes plat-validation-icone{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

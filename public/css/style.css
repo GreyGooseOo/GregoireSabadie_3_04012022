@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@keyframes affichage-menu {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  85%, 100% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes plat-validation-bkg {
+  0% {
+    transform: translateX(70px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes plat-validation-prix {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-70px);
+  }
+}
+@keyframes plat-validation-icone {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   width: 100%;
   display: flex;
@@ -282,24 +318,66 @@ h1 i {
 }
 .plats__choix {
   background-color: white;
+  overflow: hidden;
   border-radius: 20px;
   width: auto;
   margin: 10px;
   padding: 15px;
   box-shadow: 4px 4px 10px #c3c3c3;
   position: relative;
+  animation: affichage-menu 800ms both ease-out;
+}
+.plats__choix__1 {
+  animation-delay: 100ms;
+}
+.plats__choix__2 {
+  animation-delay: 200ms;
+}
+.plats__choix__3 {
+  animation-delay: 300ms;
+}
+.plats__choix__4 {
+  animation-delay: 400ms;
 }
 .plats__choix__nom {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+.plats__choix__info {
+  text-overflow: ellipsis;
+}
 .plats__choix__prix {
+  padding: 15px;
   position: absolute;
-  right: 20px;
-  bottom: 15px;
+  right: 0px;
+  bottom: 0px;
   font-weight: bold;
-  z-index: 1;
+}
+.plats__choix__validation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform-origin: right;
+  height: 100%;
+  width: 70px;
+  background-color: #99E2D0;
+  transform: translateX(80px);
+}
+.plats__choix__validation i {
+  font-size: 30px;
+  padding: 25px 20px 25px 20px;
+  color: white;
+  text-align: center;
+}
+.plats__choix:hover > .plats__choix__validation {
+  animation: plat-validation-bkg 800ms both ease-in-out;
+}
+.plats__choix:hover > .plats__choix__prix {
+  animation: plat-validation-prix 800ms both ease-in-out;
+}
+.plats__choix:hover i {
+  animation: plat-validation-icone 800ms both ease-in-out;
 }
 
 .menu {
