@@ -25,3 +25,11 @@
     }
     
 }
+@mixin like-plein {
+    background: linear-gradient(150deg, $clr-sec, $clr-prim);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    z-index: 1;
+}

@@ -10,12 +10,30 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
     span{
         padding: 20px;
     }
-    i{
-        padding: 20px 50px 20px 20px;
+    .like{
+        cursor: pointer;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        &--plein{
+            @include like-plein;
+            position: relative;
+            bottom : 45px;
+        }
+        &:hover{
+            .like--plein{
+                animation: $anim-like;
+            }
+            .like--vide{
+                animation: $anim-like reverse;
+            }
+        }
     }
+
 }
 .plats{
     font-family: $font-sec;
