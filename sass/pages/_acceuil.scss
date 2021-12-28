@@ -1,3 +1,7 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #bloc_page {
     animation: bloc-page 0ms  3000ms both;
     position: absolute;
@@ -18,7 +22,7 @@
             width: $load-size;
             animation: load 800ms backwards 3 alternate ease-in-out;
             @for $i from 1 through $num-bars {
-                &--#{$i} {
+                &:nth-child(#{$i}) {
                     animation-delay: 150ms * $i;
                 }
             }

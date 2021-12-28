@@ -1,3 +1,7 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .img__restaurant img{
     width: 100vw;
     height: 300px;
@@ -71,7 +75,10 @@ h1{
             margin-bottom: 10px;
         }
         &__info{
+            overflow: hidden;
             text-overflow: ellipsis;
+            max-width: calc(100% - 120px);
+            white-space: nowrap;
         }
         &__prix{
             padding: 15px;
