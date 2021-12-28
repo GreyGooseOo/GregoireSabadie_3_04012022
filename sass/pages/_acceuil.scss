@@ -1,3 +1,31 @@
+#bloc_page {
+    animation: bloc-page 0ms  3000ms both;
+    position: absolute;
+}
+.loader{
+    margin: auto;
+    position: relative;
+    top: 200px;
+    .load {
+        width: $load-size*($num-bars*2);
+        height: $load-size*7.5;
+        display: flex;
+        justify-content: space-evenly;
+        &__bar {
+            background: $deg-bkg;
+            border-radius: 15px;
+            height: 100%;
+            width: $load-size;
+            animation: load 800ms backwards 3 alternate ease-in-out;
+            @for $i from 1 through $num-bars {
+                &--#{$i} {
+                    animation-delay: 150ms * $i;
+                }
+            }
+        }
+    }
+}
+
 .container
 {
     z-index: -1;

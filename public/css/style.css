@@ -45,6 +45,30 @@
     transform: scale(1);
   }
 }
+@keyframes bloc-page {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes load {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes hide-load {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 body {
   width: 100%;
   display: flex;
@@ -118,6 +142,45 @@ footer li a:hover {
 }
 footer li i {
   margin-right: 10px;
+}
+
+#bloc_page {
+  animation: bloc-page 0ms 3000ms both;
+  position: absolute;
+}
+
+.loader {
+  margin: auto;
+  position: relative;
+  top: 200px;
+}
+.loader .load {
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.loader .load__bar {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border-radius: 15px;
+  height: 100%;
+  width: 30px;
+  animation: load 800ms backwards 3 alternate ease-in-out;
+}
+.loader .load__bar--1 {
+  animation-delay: 150ms;
+}
+.loader .load__bar--2 {
+  animation-delay: 300ms;
+}
+.loader .load__bar--3 {
+  animation-delay: 450ms;
+}
+.loader .load__bar--4 {
+  animation-delay: 600ms;
+}
+.loader .load__bar--5 {
+  animation-delay: 750ms;
 }
 
 .container {
@@ -325,7 +388,7 @@ h1 span {
 h1 .like {
   cursor: pointer;
   position: absolute;
-  right: 50px;
+  right: 2%;
   top: 20px;
 }
 h1 .like--plein {

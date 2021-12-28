@@ -2,6 +2,7 @@ $clr-prim : #9356DC ;
 $clr-sec : #FF79DA ;
 $clr-ter : #99E2D0;
 $clr-bkg : #f6f6f6;
+$deg-bkg : linear-gradient(175deg, $clr-sec, $clr-prim);
 
 $font-prim : 'Shrikhand';
 $font-sec : 'Roboto';
@@ -9,3 +10,6 @@ $font-sec : 'Roboto';
 $nb-max-plat : 4;
 
 $anim-like : like 800ms ease-in-out both;
+
+$load-size : 30px;
+$num-bars : 5;

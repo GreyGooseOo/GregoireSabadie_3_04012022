@@ -17,7 +17,7 @@ h1{
     .like{
         cursor: pointer;
         position: absolute;
-        right: 50px;
+        right: 2%;
         top: 20px;
         &--plein{
             @include like-plein;
