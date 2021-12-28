@@ -3,6 +3,7 @@ $clr-sec : #FF79DA ;
 $clr-ter : #99E2D0;
 $clr-bkg : #f6f6f6;
 $deg-bkg : linear-gradient(175deg, $clr-sec, $clr-prim);
+$deg-lgt : linear-gradient(175deg, lighten($clr-sec,5%),lighten($clr-prim,5%));
 
 $font-prim : 'Shrikhand';
 $font-sec : 'Roboto';

@@ -35,6 +35,22 @@
     transform: rotate(360deg);
   }
 }
+@keyframes plat-validation-info {
+  0% {
+    max-width: calc(100% - 30px);
+  }
+  100% {
+    max-width: calc(100% - 100px);
+  }
+}
+@keyframes plat-validation-nom {
+  0% {
+    max-width: 100%;
+  }
+  100% {
+    max-width: calc(100% - 70px);
+  }
+}
 @keyframes like {
   0% {
     transform: scale(0);
@@ -235,12 +251,21 @@ body {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border-radius: 40px;
   box-shadow: 4px 4px 10px #c3c3c3;
+  z-index: 1;
+  position: relative;
   padding: 20px;
+  transition: 200ms ease-in-out;
 }
 .container__block__btn a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+.container__block__btn:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+}
+.container__block__btn:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
 
 .fonctionnement__container {
@@ -468,11 +493,15 @@ h1 .like:hover .like--vide {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: nowrap;
 }
 .plats__choix__info {
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: calc(100% - 120px);
+  max-width: calc(100% - 30px);
   white-space: nowrap;
 }
 .plats__choix__prix {
@@ -507,6 +536,12 @@ h1 .like:hover .like--vide {
 .plats__choix:hover i {
   animation: plat-validation-icone 800ms both ease-in-out;
 }
+.plats__choix:hover > .plats__choix__nom {
+  animation: plat-validation-nom 800ms both ease-in-out;
+}
+.plats__choix:hover > .plats__choix__info {
+  animation: plat-validation-info 800ms both ease-in-out;
+}
 
 .menu {
   width: 100%;
@@ -528,11 +563,16 @@ h1 .like:hover .like--vide {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border-radius: 40px;
   box-shadow: 4px 4px 10px #c3c3c3;
+  z-index: 1;
+  position: relative;
 }
 .menu .btn_commander a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+.menu .btn_commander:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
 
 /*# sourceMappingURL=style.css.map */

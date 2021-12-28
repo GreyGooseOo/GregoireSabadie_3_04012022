@@ -18,12 +18,16 @@
     background: linear-gradient(175deg, $clr-sec, $clr-prim);
     border-radius: 40px;
     box-shadow: 4px 4px 10px darken($clr-bkg,20%);
+    z-index: 1;
+    position: relative;
     & a{
         text-decoration: none;
         color: white;
         font-weight: bold;
-    }
-    
+    }   
+    &:hover{
+        background: $deg-lgt;     
+    }  
 }
 @mixin like-plein {
     background: linear-gradient(150deg, $clr-sec, $clr-prim);

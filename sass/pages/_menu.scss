@@ -73,11 +73,15 @@ h1{
             font-weight: bold;
             font-size: 1.2em;
             margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            white-space: nowrap;
         }
         &__info{
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: calc(100% - 120px);
+            max-width: calc(100% - 30px);
             white-space: nowrap;
         }
         &__prix{
@@ -113,6 +117,12 @@ h1{
         }
         &:hover i{
             animation: plat-validation-icone 800ms both ease-in-out;
+        }
+        &:hover > &__nom{
+            animation: plat-validation-nom 800ms both ease-in-out;
+        }
+        &:hover > &__info{
+            animation: plat-validation-info 800ms both ease-in-out;
         }
     }
 }

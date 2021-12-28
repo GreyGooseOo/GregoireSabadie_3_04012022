@@ -34,6 +34,22 @@
         transform: rotate(360deg);
     }
 }
+@keyframes plat-validation-info{
+    0%{
+        max-width: calc(100% - 30px);
+    }
+    100%{
+        max-width: calc(100% - 100px);
+    }
+}
+@keyframes plat-validation-nom{
+    0%{
+        max-width: calc(100%);
+    }
+    100%{
+        max-width: calc(100% - 70px);
+    }
+}
 @keyframes like{
     0%{
         transform: scale(0);
