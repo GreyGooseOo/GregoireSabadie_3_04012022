@@ -20,13 +20,15 @@
     box-shadow: 4px 4px 10px darken($clr-bkg,20%);
     z-index: 1;
     position: relative;
+    transition: all 500ms ease-in-out;
     & a{
         text-decoration: none;
         color: white;
         font-weight: bold;
     }   
     &:hover{
-        background: $deg-lgt;     
+        opacity: 0.8;
+        box-shadow: 4px 4px 10px darken($clr-bkg,70%);  
     }  
 }
 @mixin like-plein {

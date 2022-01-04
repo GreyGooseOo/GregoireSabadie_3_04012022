@@ -253,8 +253,8 @@ body {
   box-shadow: 4px 4px 10px #c3c3c3;
   z-index: 1;
   position: relative;
+  transition: all 500ms ease-in-out;
   padding: 20px;
-  transition: 200ms ease-in-out;
 }
 .container__block__btn a {
   text-decoration: none;
@@ -262,10 +262,8 @@ body {
   font-weight: bold;
 }
 .container__block__btn:hover {
-  background: linear-gradient(175deg, #ff93e1, #a16be0);
-}
-.container__block__btn:hover {
-  background: linear-gradient(175deg, #ff93e1, #a16be0);
+  opacity: 0.8;
+  box-shadow: 4px 4px 10px #444444;
 }
 
 .fonctionnement__container {
@@ -604,6 +602,7 @@ h1 .like:hover .like--vide {
   box-shadow: 4px 4px 10px #c3c3c3;
   z-index: 1;
   position: relative;
+  transition: all 500ms ease-in-out;
 }
 .menu .btn_commander a {
   text-decoration: none;
@@ -611,7 +610,8 @@ h1 .like:hover .like--vide {
   font-weight: bold;
 }
 .menu .btn_commander:hover {
-  background: linear-gradient(175deg, #ff93e1, #a16be0);
+  opacity: 0.8;
+  box-shadow: 4px 4px 10px #444444;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -66,11 +66,6 @@ body{
         &__btn{          
             @include btn-prim;
             padding: 20px;
-            transition: 200ms ease-in-out;
-            &:hover{
-                background: $deg-lgt;
-            }
-            
         }
     }
 }
