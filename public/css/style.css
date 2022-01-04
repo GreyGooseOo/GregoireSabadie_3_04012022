@@ -321,19 +321,29 @@ body {
   color: #9356DC;
 }
 
-.restaurants__container {
+@media all and (min-width: 769px) {
+  .fonctionnement__container ol {
+    flex-direction: row;
+  }
+  .fonctionnement__container ol li {
+    width: 28%;
+  }
+}
+.restaurants {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   padding: 60px 20px 60px 20px;
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
 }
-.restaurants__container h2 {
+.restaurants h2 {
   font-size: 1.4em;
   padding: 0px;
   margin: 0px;
   font-weight: bold;
   margin-bottom: 30px;
+}
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
 }
 .restaurants__container__block {
   background-color: white;
@@ -401,6 +411,16 @@ body {
   object-fit: cover;
 }
 
+@media all and (min-width: 769px) {
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants__container__block {
+    width: 400px;
+    margin: 15px;
+  }
+}
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -447,6 +467,11 @@ h1 .like:hover .like--vide {
   animation: like 800ms ease-in-out both reverse;
 }
 
+@media all and (min-width: 769px) {
+  h1 {
+    justify-content: space-around;
+  }
+}
 .plats {
   font-family: "Roboto";
   width: 100vw;
@@ -543,6 +568,20 @@ h1 .like:hover .like--vide {
   animation: plat-validation-info 800ms both ease-in-out;
 }
 
+@media all and (min-width: 769px) {
+  .plats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plats .bordure {
+    left: 0px;
+  }
+  .plats__choix {
+    width: 50%;
+  }
+}
 .menu {
   width: 100%;
   background-color: #f6f6f6;

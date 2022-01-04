@@ -2,6 +2,7 @@ body{
     max-width: 100%;
     overflow-x: hidden;
 }
+
 .img__restaurant img{
     width: 100vw;
     height: 300px;
@@ -38,6 +39,11 @@ h1{
         }
     }
 
+}
+@media all and (min-width: 769px){
+    h1{
+        justify-content: space-around;
+    }
 }
 .plats{
     font-family: $font-sec;
@@ -123,6 +129,20 @@ h1{
         }
         &:hover > &__info{
             animation: plat-validation-info 800ms both ease-in-out;
+        }
+    }
+}
+@media all and (min-width: 769px){
+    .plats{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .bordure{
+            left: 0px;
+        }
+        &__choix{
+        width: 50%;
         }
     }
 }

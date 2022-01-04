@@ -124,78 +124,100 @@ body{
         }
     }
 }
-.restaurants__container{
+@media all and (min-width: 769px){
+    .fonctionnement__container{
+        ol{
+            flex-direction: row;
+            li{
+                width: 28%
+            }
+        }
+    }
+}
+.restaurants{
     font-family: $font-sec,Arial, Helvetica, sans-serif;
     padding: 60px 20px 60px 20px;
     background-color: $clr-bkg;
-    display: flex;
-    flex-direction: column;
     h2{
         @include subtitle-style;
         margin-bottom : 30px;
     }
-    &__block{
-        background-color: white;
-        border-radius: 25px;
-        font-size: 1em;
-        width: 100%;
-        height: 350px;
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 25px;
-        box-shadow: 4px 4px 10px darken($clr-bkg,20%);
-        &__new{
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: darken($clr-ter,40%);
-            padding: 5px 10px 5px 10px;
-            background-color: $clr-ter;
-            font-weight: bold;
-        }
-        &__like{
-            font-size: 30px;
-            cursor: pointer;
-            position: absolute;
-            bottom: 35px;
-            right: 50px;
-            &--plein{
-                @include like-plein;
-            }
-            &:hover {
-                .restaurants__container__block__like--plein{
-                    animation: $anim-like;
-                }
-                .restaurants__container__block__like--vide{
-                    animation: $anim-like reverse;
-                }
-            }
-            &--vide{
-                position: relative;
-                top: 35px;
-            }
-        }
-        &__nom{
-            font-weight: bolder;
-            padding: 15px 0 5px 15px;
-            font-size: 1.1em;
-            
-        }
-        &__lieu{
-            padding: 0 0 15px 15px;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            &:hover{
-                color: $clr-prim;
-            }
-        }
-        img{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        &__block{
+            background-color: white;
+            border-radius: 25px;
+            font-size: 1em;
             width: 100%;
-            height: 260px;
-            object-fit: cover;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 25px;
+            box-shadow: 4px 4px 10px darken($clr-bkg,20%);
+            &__new{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: darken($clr-ter,40%);
+                padding: 5px 10px 5px 10px;
+                background-color: $clr-ter;
+                font-weight: bold;
+            }
+            &__like{
+                font-size: 30px;
+                cursor: pointer;
+                position: absolute;
+                bottom: 35px;
+                right: 50px;
+                &--plein{
+                    @include like-plein;
+                }
+                &:hover {
+                    .restaurants__container__block__like--plein{
+                        animation: $anim-like;
+                    }
+                    .restaurants__container__block__like--vide{
+                        animation: $anim-like reverse;
+                    }
+                }
+                &--vide{
+                    position: relative;
+                    top: 35px;
+                }
+            }
+            &__nom{
+                font-weight: bolder;
+                padding: 15px 0 5px 15px;
+                font-size: 1.1em;
+                
+            }
+            &__lieu{
+                padding: 0 0 15px 15px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: $clr-prim;
+                }
+            }
+            img{
+                width: 100%;
+                height: 260px;
+                object-fit: cover;
+            }
+    
         }
-
+    }
+}
+@media all and (min-width: 769px){
+    .restaurants__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__block{
+            width: 400px;
+            margin: 15px;
+        }
     }
 }
